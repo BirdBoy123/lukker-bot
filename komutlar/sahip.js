@@ -4,14 +4,11 @@ const Discord = require('discord.js');
 exports.run = function(client, message) {
  
     const embed = new Discord.RichEmbed()
-        .setDescription("**Lukker Adlı Botun Sahibi**")
+        .setDescription("Lukker Adlı Botun Sahibi")
         .setColor(0x00AE86)
         .addField("Adı :", "Furkan", true)
         .addField("Soyadı :", "Arı", true)
-        .addField("Yaşı :", "21", true)
-        .addField("Kodlama Bilgisi :", "Öğrenmeye Çalışıyor.", true)
-        .addField("Mesleği :", "Yazılım Mühendisi", true)
-
+        .addField("Yaşı :", "13", true)
 
    message.channel.send(embed)
 };
