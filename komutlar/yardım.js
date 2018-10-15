@@ -14,7 +14,7 @@ exports.run = (client, message, params) => {
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .setDescription('Özel mesajlarını kontrol et. :postbox:');
-    message.channel.sendEmbed(ozelmesajkontrol) }
+    message.channel.send(ozelmesajkontrol) }
   } else {
     let command = params[0];
     if (client.commands.has(command)) {
