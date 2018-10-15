@@ -3,15 +3,15 @@ const chancejs = require('chance');
 const chance = new chancejs();
 
 const cevaplar = [
-	"YAZI-TURA:__TURA__**",
-	"YAZI-TURA:__YAZI__**"
+	"YAZI-TURA:**__TURA__**",
+	"YAZI-TURA:**__YAZI__**"
 ];
 
 exports.run = function(client, message) {
 	
 	var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)];
 	
-	if (cevap === "YAZI-TURA:__YAZI__**") {
+	if (cevap === "YAZI-TURA:**__YAZI__**") {
 		
 		 const embedyazı = new Discord.RichEmbed()
 		.setColor(0xf4b942)
@@ -19,7 +19,7 @@ exports.run = function(client, message) {
 		.setThumbnail("http://www.freakonomics.com/wp-content/uploads/2013/01/coin-300x218.jpg")
 		message.channel.send(embedyazı);
 		
-	} else if (cevap === "YAZI-TURA:__TURA__**") {
+	} else if (cevap === "YAZI-TURA:**__TURA__**") {
 		
 		const embedtura = new Discord.RichEmbed()
 		.setColor(0xf4b942)
